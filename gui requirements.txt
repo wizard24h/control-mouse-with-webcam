@@ -1,0 +1,22 @@
+
+
+
+shortcuts 	
+	picture => command
+
+settings 
+	sensitivity sliders
+	smoothness sliders
+	accuracy sliders
+	new palm button 
+
+about us
+	our team name
+	university 
+	project description
+	
+
+
+
+
+
