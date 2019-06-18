@@ -1,2 +1,8 @@
 .idea/
+build/
+dist/
+interview/
+UML/
+video/
 draft.py
+gui requirements.txt

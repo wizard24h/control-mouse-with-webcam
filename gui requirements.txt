@@ -1,6 +1,3 @@
-
-
-
 shortcuts 	
 	picture => command
 
@@ -8,15 +5,11 @@ settings
 	sensitivity sliders
 	smoothness sliders
 	accuracy sliders
-	new palm button 
+	new palm button 	
+	view channels
 
 about us
 	our team name
 	university 
 	project description
 	
-
-
-
-
-

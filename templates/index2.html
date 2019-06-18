@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="/Images/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: floralwhite ;
+        }
+    </style>
+</head>
+<body>
+<section class="content">
+    <div class="container">
+        <div class="col-mid-10">
+            <div class="center">
+                <form method="post",id="form">
+                    <p>ReGesture CAPTCHA bot filtering system</p>
+                    <button id="button1" class="btn btn-danger" type="button" > Im not a robot</button>
+                    <h4 id="question" class="alert-warning" hidden>What is the answer of 18-14 ? </h4>
+                    <div id="response">
+                        <div id="robot" hidden>
+                            <img style="width: 200px" src="/Images/robot.png" alt="">
+                            <p class="alert-danger">Robot has been detected!!</p>
+                        </div>
+                        <div id="human" hidden>
+                            <img style="width: 200px" src="/Images/human.jpg" alt="">
+                            <p class="alert-success">Thank you Human!</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type=text/javascript>
+    $('#button1').click(function(){
+        $('#question').removeAttr('hidden');
+        $.ajax({
+            url: "/captcha",
+            type: "GET",
+            success: function(resp){
+                if (resp == 'true'){
+                    $('#robot').attr('hidden','hidden');
+                    $('#human').removeAttr('hidden');
+                }else{
+                    $('#human').attr('hidden','hidden');
+                    $('#robot').removeAttr('hidden');
+                }
+                $('#question').attr('hidden','hidden');
+
+            }
+        });
+    });
+</script>
+<script>
+    function showmessage(){
+        alert("What is the answer of 10 - 8 ? " );
+    }
+</script>
+</html>
+
