@@ -1,10 +1,12 @@
 # created by omar aboulubdeh (wizard.24h@gmail.com)
 import tkinter
 import reGesture
+import webbrowser
 from ttkthemes import themed_tk as tk
 from tkinter import ttk
 from PIL import Image
 from PIL import ImageTk
+
 
 # AvailablePalmes = main.AvailablePalms()
 reGesture.start()
@@ -223,7 +225,10 @@ Aman = tkinter.Label(page3, text="Aman AlSafadi", font=("arial", 15, "bold"), fg
     relx=0.43, rely=0.2)
 Alaa = tkinter.Label(page3, text="Alaa Alhafez", font=("arial", 15, "bold"), fg="white", bg="#282c31").place(
     relx=0.43, rely=0.3)
-Omar = tkinter.Label(page3, text="Omar Aboulabdeh", font=("arial", 15, "bold"), fg="white", bg="#282c31").place(
+
+Omar = tkinter.Label(page3, text="Omar Aboulabdeh",cursor='hand2', font=("arial", 15, "bold"), fg="white", bg="#282c31")
+Omar.bind("<Button-1>", lambda e: webbrowser.open_new('https://www.facebook.com/omar.aboulabdeh'))
+Omar.place(
     relx=0.43, rely=0.4)
 DefaultPalm = tkinter.StringVar()
 DefaultPalm.set(AvailablePalmes[0])
