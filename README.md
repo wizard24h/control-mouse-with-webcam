@@ -18,21 +18,21 @@ AIU
 * flask (python web framework for CAPTCHA system)
 
 ## System workflow
-![my algorithm](https://ibb.co/x1mVC9j)
+![my algorithm](https://i.ibb.co/2v8XnVt/flowchart.jpg)
 
 explanation:
 1. start GUI.py using python 3.7 environment
 2. the program checks if ./palms directory has previously saved palms or not
 3. if empty then create new palm by placing your first over the green rectangle
-![palm color saving](https://ibb.co/yfwmTNd)
+![palm color saving](https://i.ibb.co/sm0pSgb/Capture.png)
 4. make sure your first covers all the gaps in the green rectangle
 5. press z once you done
 6. system GUI will startup showing up the main tab (shortcuts tab)
-![shortcuts tab](https://ibb.co/s34XXTY)
+![shortcuts tab](https://i.ibb.co/ryhXXBr/Capture2.png)
 7. here you can assign simple gestures to cmd commands such as start program or shutdown computer
-![Settings tab](https://ibb.co/BsHfVWh)
+![Settings tab](https://i.ibb.co/WKNHW8r/Capture3.png)
 8. the next tab is settings where you can setup your personal preferences such as sensetivity and accuracy
-![Palms Tab](https://ibb.co/XJtZQzD)
+![Palms Tab](https://i.ibb.co/4NpZqj2/Capture4.png)
 9. the last tab is used to create different set of palms (gloves) for different environments where lightining and background changes
 
 ### important directories and files
@@ -50,12 +50,12 @@ explanation:
 
 
 ##  CNN model + model evaluation
-![training dataset generator](https://ibb.co/6ZfwYDm)
-![CNN model description](https://ibb.co/JzYvLP3)
-![Algorithm evaluation](https://ibb.co/jVmLszM)
+![training dataset generator](https://i.ibb.co/0Xd2qYc/notebook2.png)
+![CNN model description](https://i.ibb.co/tb0qf5L/model.png)
+![Algorithm evaluation](https://i.ibb.co/5Ym5wk8/CNN-training.png)
 
 
-### my email wizard.24h@gmail.com
+### my email wizard.24h@hotmail.com
 please contact me for any matter 
 
 ### my paypal mhamad982@gmail.com
