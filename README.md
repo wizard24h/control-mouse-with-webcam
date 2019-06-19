@@ -2,7 +2,7 @@
 ### mouse + multimedia controlling system using hand gesturing with convolution neural network and image processing 
 
 AIU
-![Arabic International University](https://ibb.co/j8ygsxc)
+![Arabic International University](https://i.ibb.co/NF9Zbk8/220px-Arab-International-University-logo.png)
 
 ## required depedencies: 
 * python 3.7
